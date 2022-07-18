@@ -19,6 +19,13 @@
 * Browsers: last 4 version
 */
 
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 *{
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -889,6 +896,62 @@ footer{
     padding: 50px;
     background-color: #fff;
     border-radius: 20px;
+}
+
+
+@-webkit-keyframes modal-animation{
+    from{
+        width: 850px;
+        height: 251px;
+        margin-top: 157px;
+
+    }
+    to{
+        width: 850px;
+        height: 251px;
+        margin-top: -300px;
+    }
+}
+
+
+@keyframes modal-animation{
+    from{
+        width: 850px;
+        height: 251px;
+        margin-top: 157px;
+
+    }
+    to{
+        width: 850px;
+        height: 251px;
+        margin-top: -300px;
+    }
+}
+
+.modal-wrapper{
+    margin-top: 150px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 850px;
+    height: 251px;
+    text-align: center;
+    
+    background: #F6F6F6;
+    border-radius: 20px;
+
+    -webkit-animation-name: modal-animation;
+
+            animation-name: modal-animation;
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+    -webkit-animation-iteration-count: none;
+            animation-iteration-count: none;
+    animation-direction: alternate-reverse;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    
 }
 
 .modal-btn{
