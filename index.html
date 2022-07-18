@@ -190,8 +190,8 @@
                             width="359"
                             height="165"
                             class="site-latest-news-item-image" 
-                            src="./kartinki/iphone13.jpg" 
-                            srcset="./kartinki/iphone13.jpg 1x , ./kartinki/iphone13@2x.jpg 2x" 
+                            src="./kartinki/iphone-batary.jpg" 
+                            srcset="./kartinki/iphone-batary.jpg 1x , ./kartinki/iphone-batary@2x.jpg 2x" 
                             alt="iphone img">
                             <div class="site-latest-news-item-box Digger-icon">
                                 <p class="site-latest-news-item-box-p">Digger.ru <time class="site-news-item-box-time" datetime="2022-06-13 14:25" >14:25</time></p>
@@ -240,14 +240,17 @@
         <!-- site latest section finished -->
         
         <!-- site article start -->
-        <div class="container">
-            <article class="site-notifications">
-                <h3 class="site-notifications-h3">Хотите быть в курсе свежих новостей? <br>  Включите уведомления!</h3>
-                <div class="site-notifications-wrapper">
-                    <a class="site-notifications-link" href="#">Включит </a>
-                </div>
-            </article>
-        </div> 
+        <section id="site-notifications">
+            <div class="container">
+                <article class="site-notifications" >
+                    <h3 class="site-notifications-h3">Хотите быть в курсе свежих новостей? <br>  Включите уведомления!</h3>
+                    <div class="site-notifications-wrapper">
+                        <button class="site-notifications-link js-modal-btn" type="button">Включит </и>
+                    </div>
+                </article>
+            </div>
+        </section>
+ 
         <!-- site article finished -->
         
         <!-- site world-news section start -->
@@ -464,5 +467,15 @@
         </div> 
     </footer>
     <!-- site footer finished -->
+    <div class="modal">
+        <div class="modal-wrapper">
+            <h3 class="modal-title">
+                Хотите быть в курсе свежих новостей?  Включите уведомления!
+            </h3>
+            <button class="modal-link" type="button">Включит</button>
+            <button class="modal-btn"></button>
+        </div>
+    </div>
+    <script src="./js/main.js"></script>
 </body>
 </html>
