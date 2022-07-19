@@ -896,63 +896,30 @@ footer{
     padding: 50px;
     background-color: #fff;
     border-radius: 20px;
-}
-
-
-@-webkit-keyframes modal-animation{
-    from{
-        width: 850px;
-        height: 251px;
-        margin-top: 157px;
-
-    }
-    to{
-        width: 850px;
-        height: 251px;
-        margin-top: -300px;
-    }
-}
-
-
-@keyframes modal-animation{
-    from{
-        width: 850px;
-        height: 251px;
-        margin-top: 157px;
-
-    }
-    to{
-        width: 850px;
-        height: 251px;
-        margin-top: -300px;
-    }
-}
-
-.modal-wrapper{
-    margin-top: 150px;
-    margin-right: auto;
-    margin-left: auto;
-    width: 850px;
-    height: 251px;
-    text-align: center;
-    
-    background: #F6F6F6;
-    border-radius: 20px;
-
-    -webkit-animation-name: modal-animation;
-
-            animation-name: modal-animation;
-    -webkit-animation-duration: 3s;
-            animation-duration: 3s;
+    -webkit-animation-name: slide-in-animation;
+        animation-name: slide-in-animation;
+    -webkit-animation-duration: 1s;
+        animation-duration: 1s;
     -webkit-animation-iteration-count: none;
-            animation-iteration-count: none;
+        animation-iteration-count: none;
     animation-direction: alternate-reverse;
     -webkit-animation-timing-function: linear;
-            animation-timing-function: linear;
+        animation-timing-function: linear;
     -webkit-animation-fill-mode: forwards;
-            animation-fill-mode: forwards;
-    
+        animation-fill-mode: forwards;
 }
+
+
+@keyframes slide-in-animation{
+    from{
+        transform: translateY(0);
+
+    }
+    to{
+        transform: translateY(-100%);
+    }
+}
+
 
 .modal-btn{
     position: absolute;
